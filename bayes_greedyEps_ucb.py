@@ -1,4 +1,4 @@
-# modelation of click trough rate manager with different approaches
+#    modelation of click trough rate manager with different approaches
 # epsilon_greedy algorithm
 # ucb1
 
@@ -107,7 +107,6 @@ def bayesian(p_keep, N):
     both randomly chosen
 
     =Thompson sampling
-    loss proportianal to logN
 
     Important fact for treshhold:
     The Probability of one actual parameter being greater as
@@ -120,7 +119,7 @@ def bayesian(p_keep, N):
 
     click_trough rate converges to highest prior
 
-
+    regret = loss if only played best bandit
     '''
     num_of_adv = len(p_keep)
     generator = dataGenerator(p_keep)
