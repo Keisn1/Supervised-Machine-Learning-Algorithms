@@ -8,6 +8,20 @@ from builtins import range, input
 
 import numpy as np
 import pandas as pd
+from sklearn.utils import shuffle
+
+
+def get_data_for_tree(limit=None):
+    print("Reading in and transforming data...")
+    df = pd.read_csv('large_files/train.csv')
+    data = df.as_matrix()
+    np.random.shuffle(data)
+    X = data[:, 1:]
+    Y = data[:, 0]
+    X, Y = shuffle(X, Y)
+    if limit is not None:
+        X, Y = X[:limit], Y[:limit]
+    return X, Y
 
 
 def get_data(limit=None):
