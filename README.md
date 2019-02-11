@@ -1,4 +1,4 @@
-# Machine-Learning-Algos
+# Machine-Learning-Algorithms
 Bunch of machine learning algorithms
 
 In this repository I put a bunch of machine learning algorithms.
