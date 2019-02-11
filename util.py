@@ -74,3 +74,12 @@ def get_data_other():
     X = np.random.random((300, 2))*2 - 1
     Y = np.sign(X.dot(w) + b)
     return X, Y
+
+
+def get_clouds():
+    cloud0 = np.random.randn(250, 2)
+    cloud1 = np.random.randn(250, 2) + np.array([5, 5])
+    cloud2 = np.random.randn(250, 2) + np.array([0, 5])
+    cloud3 = np.random.randn(250, 2) + np.array([5, 0])
+    X = np.vstack((cloud0, cloud1, cloud2, cloud3))
+    return X
