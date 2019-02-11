@@ -1,5 +1,5 @@
 # Machine-Learning-Algorithms
-Bunch of machine learning algorithms
+Bunch of supervised machine learning algorithms
 
 In this repository I put a bunch of machine learning algorithms.
 In particular algorithms that I learned of via studying at Udemy under course
